@@ -1,12 +1,63 @@
 <template>
-  <div id="nav">
-    <div class="nav-left">
+  <!-- <div id="nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <router-link to="/" class="nav-link active" aria-current="page">Home</router-link>
+        </li>
+        <li class="nav-item">    
+          <router-link to="/about" class="nav-link">About</router-link>
+        </li>
+          <li class="nav-item">    
+           <router-link to="/postsdisplay" class="nav-link">Posts</router-link>
+        </li>      
+      </ul>
+      <h1 class="faded-underline">Vue API Wordpress</h1>
+    </div>
+    
+  </div>
+  
+  </nav>
+  </div> -->
+    <h1 class="faded-underline">Vue API Wordpress</h1>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container alignment">
+      <router-link to="/" class="navbar-link">Home</router-link>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <router-link to="/about" class="nav-link active" aria-current="page"
+              >About</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link to="/postsdisplay" class="nav-link">Posts</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div class="nav-left">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/postsdisplay">Posts</router-link>
     </div>
     <h1 class="faded-underline">Vue API Wordpress</h1>
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -38,6 +89,15 @@ export default {
   --thickness: 2.8px;
   text-align: center;
   margin-bottom: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  padding:5px;
+}
+
+.alignment{
+  line-height:50px;
 }
 
 #nav {
@@ -57,11 +117,15 @@ export default {
     float:left;
     z-index:10;
 }
-
+*/
 h1{
-    transform: translateY(-25px);
-    z-index:-1;
-} */
+    
+    margin-top:10px;
+} 
+
+.navbar-custom {
+    background-color:#E3D0D8;
+}
 </style>
 
 

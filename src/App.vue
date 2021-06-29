@@ -1,23 +1,21 @@
 <template>
   <div>
-    <div >  
-         <Navbar/>
-    </div>
+    <Navbar class="mb-5 py-3"/>
+    <div class="mb-5"></div>
 
     <router-view />
-   
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
+import Navbar from "./components/Navbar.vue";
 
-export default({
-  name:"App",
-  components:{
-    Navbar
-  }
-})
+export default {
+  name: "App",
+  components: {
+    Navbar,
+  },
+};
 </script>
 
 
@@ -28,11 +26,9 @@ export default({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
- 
 }
 
-a{
-   text-decoration: none;
+a {
+  text-decoration: none;
 }
-
 </style>
