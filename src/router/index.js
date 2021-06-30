@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import PostsDisplay from "../views/PostsDisplay.vue"
 import CatToPosts from "../views/CatToPosts.vue"
 
+
 const routes = [
   {
     path: "/",

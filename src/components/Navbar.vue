@@ -1,26 +1,5 @@
 <template>
-  <!-- <div id="nav">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <router-link to="/" class="nav-link active" aria-current="page">Home</router-link>
-        </li>
-        <li class="nav-item">    
-          <router-link to="/about" class="nav-link">About</router-link>
-        </li>
-          <li class="nav-item">    
-           <router-link to="/postsdisplay" class="nav-link">Posts</router-link>
-        </li>      
-      </ul>
-      <h1 class="faded-underline">Vue API Wordpress</h1>
-    </div>
-    
-  </div>
-  
-  </nav>
-  </div> -->
+
     <h1 class="faded-underline">Vue API Wordpress</h1>
   <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
     <div class="container alignment">
@@ -51,13 +30,6 @@
     </div>
   </nav>
 
-  <!-- <div class="nav-left">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/postsdisplay">Posts</router-link>
-    </div>
-    <h1 class="faded-underline">Vue API Wordpress</h1>
-  </div> -->
 </template>
 
 <script>
