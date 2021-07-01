@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-  <Categories/>
-    
+    <h1>Categories: </h1>
+    <Categories />
   </div>
 </template>
 
@@ -11,14 +11,11 @@ import Categories from "../components/Categories.vue";
 export default {
   name: "Home",
   components: {
-    Categories
+    Categories,
   },
+
 };
 </script>
 
 <style >
-
-
-
-
 </style>

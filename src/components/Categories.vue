@@ -7,33 +7,46 @@
         </router-link>
       </div>
     </div>
+    
   </div>
+ 
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
+import {mapGetters, mapActions} from "vuex";
 
 export default {
   name: "Categories",
-  data() {
-    return {
-      categories: [],
-      errors: [],
-    };
+  // data() {
+  //   return {
+  //     categories: [],
+  //     errors: [],
+  //   };
+  // },
+   
+  methods:{
+    ...mapActions(["loadingApi"]) 
   },
+  computed:{
+    ...mapGetters(["categories"])
+  },
+  created(){
+    this.loadingApi();
+  }
 
   // Fetches posts when the component is created.
-  created() {
-    axios
-      .get(`https://www.wired.com/wp-json/wp/v2/categories/`)
-      .then((response) => {
-        // JSON responses are automatically parsed.
-        this.categories = response.data;
-      })
-      .catch((e) => {
-        this.errors.push(e);
-      });
-  },
+  // created() {
+  //   axios
+  //     .get(`https://www.wired.com/wp-json/wp/v2/categories/`)
+  //     .then((response) => {
+  //       // JSON responses are automatically parsed.
+  //       this.categories = response.data;
+  //     })
+  //     .catch((e) => {
+  //       this.errors.push(e);
+  //     });
+  // },
 };
 </script>
 
